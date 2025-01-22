@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+   int arr[6]={1000,2,33,4000,5030303,999};
+    int l=arr[0];
+    for(int i=1;i<6;i++){
+            if(arr[i]>l){
+                l=arr[i];
+            }
+    }
+    cout<<l<<" ";
+    return 0;
+}
