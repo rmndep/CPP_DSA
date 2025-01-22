@@ -1,0 +1,29 @@
+
+#include<iostream>
+using namespace std;
+
+int main(){
+   //we want to insert 5 at position 3 means index 2
+   //int size=5;
+    int arr[5]={2,43,5,1};
+    int idx=2;
+    int value=22;
+    
+    cout<<"origional array"<<endl;
+    for(int i=0;i<5;i++){
+        cout<<arr[i]<<" ";
+    }
+   
+    for(int i=5-1;i>=idx;i--){
+        arr[i+1]=arr[i];
+    }
+    arr[idx]=value;
+    cout<<"array after insertion"<<endl;
+    for(int i=0;i<5;i++){
+        cout<<arr[i]<<" ";
+    }
+
+     return 0;
+  
+
+}
